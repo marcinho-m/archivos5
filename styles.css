@@ -1,0 +1,140 @@
+/* Globales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: hsl(217, 19%, 35%);
+}
+
+h5 {
+    font-size: 1.6rem ;
+}
+
+p {
+    font-size: 1.6rem;
+    color: hsl(214, 17%, 51%);
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 768px ) {
+   img {
+    border-radius: 10px 10px 0 0;
+   }
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Clases */
+
+.share {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+
+.share:hover {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.avatar-user {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    max-width: 90rem;
+    width: 90%;
+    border-radius: 10px;
+ 
+}
+
+@media (max-width: 768px) {
+   .contenedor {
+    display: block;
+   }
+}
+
+.derecha {
+    padding: 2rem;
+}
+
+
+.contenedor-avatar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.avatar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.compartir {
+    overflow: hidden;
+    max-height: 0;
+    
+}
+
+.activo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+   .activo {
+    width: 100%;
+   }
+}
+
+
+.contenedor-compartir {
+    display: flex;
+    justify-content: end;
+}
+
+.compartir-texto {
+    visibility: hidden;
+}
+
+.oula {
+    visibility: visible;
+    text-transform: uppercase;
+}
